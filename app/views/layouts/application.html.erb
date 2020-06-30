@@ -13,6 +13,26 @@ family=Muli:300,400,500,600,700,800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+
+    <!-- Devise notification styled with bootstrap -->
+    <% if notice %>
+    <div class="notice alert alert-success alert-dismissible fade show" role="alert">
+        <%= notice %>
+        <button type="button" class="close" data-dismiss="alert" arialabel="
+Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <% elsif alert %>
+    <div class="danger alert alert-danger alert-dismissible fade show" role="alert">
+        <p><%= alert %></p>
+        <button type="button" class="close" data-dismiss="alert" arialabel="
+Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <% end %>
     <%= yield %>
 
 
