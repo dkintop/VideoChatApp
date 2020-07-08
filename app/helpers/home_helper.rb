@@ -30,3 +30,5 @@ def btnStart
         "home/partials/startbtn/authbtn"
     end
 end
+
+end
